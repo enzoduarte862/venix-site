@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VENIX OTIMIZAÇÕES - Loja</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #000;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: rgba(0, 0, 30, 0.7);
+            backdrop-filter: blur(5px);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            color: #00aaff;
+            font-size: 28px;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00aaff;
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(135deg, #000 40%, #001a33 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h2 {
+            font-size: 50px;
+            color: #00aaff;
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #0088cc; }
+            to { text-shadow: 0 0 25px #00ccff; }
+        }
+
+        .section-title {
+            font-size: 32px;
+            color: #00aaff;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .product {
+            background: #0a0a0a;
+            border: 2px solid #00aaff;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px #00aaff;
+        }
+
+        .product h3 {
+            color: #00aaff;
+        }
+
+        .product button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background: #00aaff;
+            color: #000;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .product button:hover {
+            background: #0088cc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #00111f;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>VENIX OTIMIZAÇÕES</h1>
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+    <h2>OTIMIZAÇÕES PROFISSIONAIS PARA DISCORD</h2>
+</section>
+
+<h2 class="section-title" id="produtos">Produtos</h2>
+<section class="products">
+    <div class="product">
+        <h3>Otimização Básica</h3>
+        <p>Melhore o desempenho do seu Discord com ajustes essenciais.</p>
+        <button>Comprar</button>
+    </div>
+
+    <div class="product">
+        <h3>Otimização Avançada</h3>
+        <p>Boost completo com melhorias profundas e personalizadas.</p>
+        <button>Comprar</button>
+    </div>
+
+    <div class="product">
+        <h3>Pacote Premium</h3>
+        <p>Otimização total + suporte + configs exclusivas.</p>
+        <button>Comprar</button>
+    </div>
+</section>
+
+<h2 class="section-title" id="contato">Contato</h2>
+<footer>
+    <p>Entre em contato via Discord: <strong>@venix</strong></p>
+</footer>
+
+</body>
+</html>
